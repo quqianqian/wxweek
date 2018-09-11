@@ -1,13 +1,14 @@
 {
   "pages": [
-    
+    "pages/movies/movies",
+    "pages/detail/detail",
     "pages/about/about",
     "pages/week/week"
     
   ],
   "tabBar": {
     "list": [{
-      "pagePath": "pages/week/week",
+      "pagePath": "pages/movies/movies",
       "text": "每周推荐",
       "iconPath": "images/icons/tui.png",
       "selectedIconPath": "images/icons/tui-on.png"
