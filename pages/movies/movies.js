@@ -122,22 +122,21 @@ Page({
     return;
 
     var localThis = this;
-    wx.request({
-      // url: 'http://t.yushu.im/v2/movie/subject/326',
-      url: 'http://t.yushu.im/v2/movie/top250?start=1&count=10',
-      header: {
-        'Content-Type': "json"
-      },
-      success: function(response) {
-        console.log(response.data);
-        localThis.setData({
-          movies: response.data.subjects
-        });
-      },
-      fail: function() {
-        console.log('get data error');
-      }
-    })
+    // wx.request({
+    //   url: 'http://t.yushu.im/v2/movie/top250?start=1&count=10',
+    //   header: {
+    //     'Content-Type': "json"
+    //   },
+    //   success: function(response) {
+    //     console.log(response.data);
+    //     localThis.setData({
+    //       movies: response.data.subjects
+    //     });
+    //   },
+    //   fail: function() {
+    //     console.log('get data error');
+    //   }
+    // })
   },
 
   /**

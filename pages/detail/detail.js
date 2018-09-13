@@ -11,19 +11,25 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    var localThis = this;
     wx.request({
       url: 'http://t.yushu.im/v2/movie/subject/'+options.id,
-      // url:'http://t.yushu.im/v2/movie/top250?start=1&count=10',
       header:{
         'Content-Type': "json"
       },
       success:function(response){
         console.log(response.data);
+        localThis.setData({
+          movie:response.data
+        });
+        wx.hideNavigationBarLoading();
       },
       fail:function(){
+        wx.hideNavigationBarLoading()
         console.log('get data error');
       }
-    })
+    });
+    wx.showNavigationBarLoading();
   },
 
   /**
@@ -72,6 +78,8 @@ Page({
    * 用户点击右上角分享
    */
   onShareAppMessage: function () {
-    
+    return {
+      title: "tuijian:" + this.data.movie.original_title
+    }
   }
 })
