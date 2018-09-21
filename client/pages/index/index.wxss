@@ -1,0 +1,17 @@
+.info{
+  font-size: 50rpx;
+  font-weight: bolder;
+  
+}
+
+
+
+.about-banner{
+  height: 376rpx;
+  width: 376rpx;
+  border-radius: 50%; 
+}
+
+.nav-hover {
+  color: red;
+}

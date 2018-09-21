@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/index/index",
     "pages/movies/movies",
     "pages/detail/detail",
     "pages/about/about",
@@ -8,6 +9,11 @@
   ],
   "tabBar": {
     "list": [{
+      "pagePath": "pages/index/index",
+      "text": "每周index",
+      "iconPath": "images/icons/about.png",
+      "selectedIconPath": "images/icons/about-on.png"
+    },{
       "pagePath": "pages/movies/movies",
       "text": "每周推荐",
       "iconPath": "images/icons/tui.png",
