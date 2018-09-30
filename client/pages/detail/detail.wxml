@@ -1,3 +1,0 @@
-<view>
-<text>{{movie.original_title}}</text>
-</view>

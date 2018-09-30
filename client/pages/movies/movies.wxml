@@ -1,9 +1,0 @@
-<view class='movies'>
-<view class='movie' wx:for="{{movies}}" data-movie-id="{{item.id}}" catchtap='onOpenDetail'>
-<image src='{{item.images.large}}' class='movie-img'></image>
-<view class='movie-text'>
-<text>{{item.original_title}}</text>
-<text>{{item.wish_count}}</text>
-</view>
-</view>
-</view>

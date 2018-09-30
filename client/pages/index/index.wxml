@@ -1,4 +1,0 @@
-<view class='container'>
-<text>Data from server</text>
-<text class='info'>{{data}}</text>
-</view>
